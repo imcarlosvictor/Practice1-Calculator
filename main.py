@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets as qtw
 
+
 class MainWindow(qtw.QWidget):
     def __init__(self):
         super().__init__()
@@ -18,22 +19,22 @@ class MainWindow(qtw.QWidget):
 
         # Buttons
         self.result_field = qtw.QLineEdit()
-        btn_result = qtw.QPushButton('Enter', clicked = self.func_result)
-        btn_clear = qtw.QPushButton('Clear', clicked = self.clear_calc)
-        btn_9 = qtw.QPushButton('9', clicked = lambda: self.num_press('9'))
-        btn_8 = qtw.QPushButton('8', clicked = lambda: self.num_press('8'))
-        btn_7 = qtw.QPushButton('7', clicked = lambda: self.num_press('7'))
-        btn_6 = qtw.QPushButton('6', clicked = lambda: self.num_press('6'))
-        btn_5 = qtw.QPushButton('5', clicked = lambda: self.num_press('5'))
-        btn_4 = qtw.QPushButton('4', clicked = lambda: self.num_press('4'))
-        btn_3 = qtw.QPushButton('3', clicked = lambda: self.num_press('3'))
-        btn_2 = qtw.QPushButton('2', clicked = lambda: self.num_press('2'))
-        btn_1 = qtw.QPushButton('1', clicked = lambda: self.num_press('1'))
-        btn_0 = qtw.QPushButton('0', clicked = lambda: self.num_press('0'))
-        btn_add = qtw.QPushButton('+', clicked = lambda: self.num_press('+'))
-        btn_subtract = qtw.QPushButton('-', clicked = lambda: self.func_press('-'))
-        btn_multiply = qtw.QPushButton('x', clicked = lambda: self.func_press('*'))
-        btn_divide = qtw.QPushButton('÷', clicked = lambda: self.func_press('÷'))
+        btn_result = qtw.QPushButton('Enter', clicked=self.func_result)
+        btn_clear = qtw.QPushButton('Clear', clicked=self.clear_calc)
+        btn_9 = qtw.QPushButton('9', clicked=lambda: self.num_press('9'))
+        btn_8 = qtw.QPushButton('8', clicked=lambda: self.num_press('8'))
+        btn_7 = qtw.QPushButton('7', clicked=lambda: self.num_press('7'))
+        btn_6 = qtw.QPushButton('6', clicked=lambda: self.num_press('6'))
+        btn_5 = qtw.QPushButton('5', clicked=lambda: self.num_press('5'))
+        btn_4 = qtw.QPushButton('4', clicked=lambda: self.num_press('4'))
+        btn_3 = qtw.QPushButton('3', clicked=lambda: self.num_press('3'))
+        btn_2 = qtw.QPushButton('2', clicked=lambda: self.num_press('2'))
+        btn_1 = qtw.QPushButton('1', clicked=lambda: self.num_press('1'))
+        btn_0 = qtw.QPushButton('0', clicked=lambda: self.num_press('0'))
+        btn_add = qtw.QPushButton('+', clicked=lambda: self.num_press('+'))
+        btn_subtract = qtw.QPushButton('-', clicked=lambda: self.func_press('-'))
+        btn_multiply = qtw.QPushButton('x', clicked=lambda: self.func_press('*'))
+        btn_divide = qtw.QPushButton('÷', clicked=lambda: self.func_press('÷'))
 
         # Adding buttons to the layout
         container.layout().addWidget(self.result_field, 0, 0, 1, 5)
